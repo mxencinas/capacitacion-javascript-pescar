@@ -1,0 +1,16 @@
+body {
+    background: #333;
+    color: white;
+}
+
+.bg-azul{
+    background-color: #007BFF;
+    
+    width: fit-content;
+}
+
+.bg-violeta{
+    background-color: #6f42c1;
+ 
+    width: fit-content;
+}
