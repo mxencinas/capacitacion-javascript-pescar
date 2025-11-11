@@ -100,6 +100,26 @@ h1 {
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
+.btn-eliminar {
+  width: 100%;
+  padding: 20px;
+  background: #b41818;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.btn-eliminar:hover {
+  background: #b41818;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
 .tip {
   background: #fff3cd;
   padding: 15px;
@@ -120,6 +140,18 @@ h1 {
   justify-content: center;
 }
 
+/* ANIMACION CARD */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Card individual */
 .card {
   background: white;
@@ -129,6 +161,7 @@ h1 {
   width: 240px;
   transition: all 0.3s ease;
   cursor: pointer;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 .card:hover {
